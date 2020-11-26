@@ -1,0 +1,311 @@
+2020-11-19 15:55:01,846|azureml|DEBUG|Inputs:: kwargs: {'OutputCollection': True, 'EnableMLflowTracking': True, 'snapshotProject': True, 'only_in_process_features': True, 'skip_track_logs_dir': True}, track_folders: None, deny_list: None, directories_to_watch: []
+2020-11-19 15:55:01,847|azureml.history._tracking.PythonWorkingDirectory|DEBUG|Execution target type: batchai
+2020-11-19 15:55:01,854|azureml.history._tracking.PythonWorkingDirectory|DEBUG|Failed to import pyspark with error: No module named 'pyspark'
+2020-11-19 15:55:01,854|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Pinning working directory for filesystems: ['pyfs']
+2020-11-19 15:55:02,399|azureml.core.run|DEBUG|Adding new factory <function ScriptRun._from_run_dto at 0x7f36bb8e46a8> for run source azureml.scriptrun
+2020-11-19 15:55:02,401|azureml.core.authentication.TokenRefresherDaemon|DEBUG|Starting daemon and triggering first instance
+2020-11-19 15:55:02,413|msrest.universal_http.requests|DEBUG|Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2020-11-19 15:55:02,414|azureml._restclient.clientbase|INFO|Created a worker pool for first use
+2020-11-19 15:55:02,414|azureml.core.authentication|DEBUG|Time to expire 1814117.585148 seconds
+2020-11-19 15:55:02,415|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://southcentralus.experiments.azureml.net.
+2020-11-19 15:55:02,415|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://southcentralus.experiments.azureml.net.
+2020-11-19 15:55:02,415|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://southcentralus.experiments.azureml.net.
+2020-11-19 15:55:02,415|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://southcentralus.experiments.azureml.net.
+2020-11-19 15:55:02,594|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://southcentralus.experiments.azureml.net.
+2020-11-19 15:55:02,595|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://southcentralus.experiments.azureml.net.
+2020-11-19 15:55:02,595|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://southcentralus.experiments.azureml.net.
+2020-11-19 15:55:02,602|msrest.universal_http.requests|DEBUG|Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2020-11-19 15:55:02,611|msrest.universal_http.requests|DEBUG|Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2020-11-19 15:55:02,618|msrest.universal_http.requests|DEBUG|Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2020-11-19 15:55:02,624|msrest.universal_http.requests|DEBUG|Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2020-11-19 15:55:02,632|msrest.universal_http.requests|DEBUG|Configuring retry: max_retries=3, backoff_factor=0.8, max_backoff=90
+2020-11-19 15:55:02,633|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.RunClient.get-async:False|DEBUG|[START]
+2020-11-19 15:55:02,633|msrest.service_client|DEBUG|Accept header absent and forced to application/json
+2020-11-19 15:55:02,633|msrest.http_logger|DEBUG|Request URL: 'https://southcentralus.experiments.azureml.net/history/v1.0/subscriptions/bc4ac49b-f3f0-45bb-995b-638f2c80696f/resourceGroups/aml-quickstarts-126892/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-126892/experiments/hyper_drive/runs/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0'
+2020-11-19 15:55:02,634|msrest.http_logger|DEBUG|Request method: 'GET'
+2020-11-19 15:55:02,634|msrest.http_logger|DEBUG|Request headers:
+2020-11-19 15:55:02,634|msrest.http_logger|DEBUG|    'Accept': 'application/json'
+2020-11-19 15:55:02,634|msrest.http_logger|DEBUG|    'Content-Type': 'application/json; charset=utf-8'
+2020-11-19 15:55:02,634|msrest.http_logger|DEBUG|    'x-ms-client-request-id': '15bc4bc0-9dd8-447b-90be-777b59a9f825'
+2020-11-19 15:55:02,634|msrest.http_logger|DEBUG|    'request-id': '15bc4bc0-9dd8-447b-90be-777b59a9f825'
+2020-11-19 15:55:02,634|msrest.http_logger|DEBUG|    'User-Agent': 'python/3.6.2 (Linux-4.15.0-1098-azure-x86_64-with-debian-stretch-sid) msrest/0.6.14 azureml._restclient/core.1.6.0 azureml-sdk-core/1.6.0'
+2020-11-19 15:55:02,634|msrest.http_logger|DEBUG|Request body:
+2020-11-19 15:55:02,634|msrest.http_logger|DEBUG|None
+2020-11-19 15:55:02,634|msrest.universal_http|DEBUG|Configuring redirects: allow=True, max=30
+2020-11-19 15:55:02,635|msrest.universal_http|DEBUG|Configuring request: timeout=100, verify=True, cert=None
+2020-11-19 15:55:02,635|msrest.universal_http|DEBUG|Configuring proxies: ''
+2020-11-19 15:55:02,635|msrest.universal_http|DEBUG|Evaluate proxies against ENV settings: True
+2020-11-19 15:55:02,704|msrest.http_logger|DEBUG|Response status: 200
+2020-11-19 15:55:02,705|msrest.http_logger|DEBUG|Response headers:
+2020-11-19 15:55:02,705|msrest.http_logger|DEBUG|    'Date': 'Thu, 19 Nov 2020 15:55:02 GMT'
+2020-11-19 15:55:02,705|msrest.http_logger|DEBUG|    'Content-Type': 'application/json; charset=utf-8'
+2020-11-19 15:55:02,705|msrest.http_logger|DEBUG|    'Transfer-Encoding': 'chunked'
+2020-11-19 15:55:02,705|msrest.http_logger|DEBUG|    'Connection': 'keep-alive'
+2020-11-19 15:55:02,705|msrest.http_logger|DEBUG|    'Vary': 'Accept-Encoding'
+2020-11-19 15:55:02,706|msrest.http_logger|DEBUG|    'Request-Context': 'appId=cid-v1:2d2e8e63-272e-4b3c-8598-4ee570a0e70d'
+2020-11-19 15:55:02,706|msrest.http_logger|DEBUG|    'x-ms-response-type': 'standard'
+2020-11-19 15:55:02,706|msrest.http_logger|DEBUG|    'x-ms-client-request-id': '15bc4bc0-9dd8-447b-90be-777b59a9f825'
+2020-11-19 15:55:02,706|msrest.http_logger|DEBUG|    'x-ms-client-session-id': ''
+2020-11-19 15:55:02,706|msrest.http_logger|DEBUG|    'X-Content-Type-Options': 'nosniff'
+2020-11-19 15:55:02,706|msrest.http_logger|DEBUG|    'x-request-time': '0.045'
+2020-11-19 15:55:02,706|msrest.http_logger|DEBUG|    'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'
+2020-11-19 15:55:02,706|msrest.http_logger|DEBUG|    'Content-Encoding': 'gzip'
+2020-11-19 15:55:02,706|msrest.http_logger|DEBUG|Response content:
+2020-11-19 15:55:02,707|msrest.http_logger|DEBUG|{
+  "runNumber": 24,
+  "rootRunId": "HD_af0a1956-3032-44c7-98cf-78ad7bc59689",
+  "experimentId": "ad848256-f4c6-40ea-b15e-98279402c393",
+  "createdUtc": "2020-11-19T15:50:21.0293931+00:00",
+  "createdBy": {
+    "userObjectId": "ff86df11-af9c-4c73-8325-006231b4b107",
+    "userPuId": "10032000FA4BD9B0",
+    "userIdp": null,
+    "userAltSecId": null,
+    "userIss": "https://sts.windows.net/660b3398-b80e-49d2-bc5b-ac1dc93b5254/",
+    "userTenantId": "660b3398-b80e-49d2-bc5b-ac1dc93b5254",
+    "userName": "ODL_User 126892"
+  },
+  "userId": "ff86df11-af9c-4c73-8325-006231b4b107",
+  "token": null,
+  "tokenExpiryTimeUtc": null,
+  "error": null,
+  "warnings": null,
+  "revision": 8,
+  "runUuid": "300fda9a-dcbb-44a1-a423-62502e46bd85",
+  "parentRunUuid": "9dc1a897-24b2-464d-8fc5-6ae7cc9fb4e0",
+  "rootRunUuid": "9dc1a897-24b2-464d-8fc5-6ae7cc9fb4e0",
+  "runId": "HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0",
+  "parentRunId": "HD_af0a1956-3032-44c7-98cf-78ad7bc59689",
+  "status": "Running",
+  "startTimeUtc": "2020-11-19T15:53:38.0250861+00:00",
+  "endTimeUtc": null,
+  "options": {
+    "generateDataContainerIdIfNotSpecified": true
+  },
+  "name": null,
+  "dataContainerId": "dcid.HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0",
+  "description": null,
+  "hidden": false,
+  "runType": "azureml.scriptrun",
+  "properties": {
+    "_azureml.ComputeTargetType": "amlcompute",
+    "ContentSnapshotId": "d912d8a2-1f3b-4b59-ba49-9bd056530615",
+    "ProcessInfoFile": "azureml-logs/process_info.json",
+    "ProcessStatusFile": "azureml-logs/process_status.json"
+  },
+  "scriptName": "train.py",
+  "target": "hd-cluster",
+  "uniqueChildRunComputeTargets": [],
+  "tags": {
+    "_aml_system_ComputeTargetStatus": "{\"AllocationState\":\"resizing\",\"PreparingNodeCount\":0,\"RunningNodeCount\":0,\"CurrentNodeCount\":0}"
+  },
+  "inputDatasets": [],
+  "outputDatasets": [],
+  "runDefinition": null,
+  "createdFrom": null,
+  "cancelUri": "https://southcentralus.experiments.azureml.net/execution/v1.0/subscriptions/bc4ac49b-f3f0-45bb-995b-638f2c80696f/resourceGroups/aml-quickstarts-126892/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-126892/experiments/hyper_drive/runId/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0/cancel",
+  "completeUri": null,
+  "diagnosticsUri": "https://southcentralus.experiments.azureml.net/execution/v1.0/subscriptions/bc4ac49b-f3f0-45bb-995b-638f2c80696f/resourceGroups/aml-quickstarts-126892/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-126892/experiments/hyper_drive/runId/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0/diagnostics",
+  "computeRequest": {
+    "nodeCount": 1
+  },
+  "retainForLifetimeOfWorkspace": null,
+  "queueingInfo": null
+}
+2020-11-19 15:55:02,715|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.RunClient.get-async:False|DEBUG|[STOP]
+2020-11-19 15:55:02,716|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0|DEBUG|Constructing run from dto. type: azureml.scriptrun, source: None, props: {'_azureml.ComputeTargetType': 'amlcompute', 'ContentSnapshotId': 'd912d8a2-1f3b-4b59-ba49-9bd056530615', 'ProcessInfoFile': 'azureml-logs/process_info.json', 'ProcessStatusFile': 'azureml-logs/process_status.json'}
+2020-11-19 15:55:02,716|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunContextManager|DEBUG|Valid logs dir, setting up content loader
+2020-11-19 15:55:02,717|azureml|WARNING|Could not import azureml.mlflow or azureml.contrib.mlflow mlflow APIs will not run against AzureML services.  Add azureml-mlflow as a conda dependency for the run if this behavior is desired
+2020-11-19 15:55:02,717|azureml.WorkerPool|DEBUG|[START]
+2020-11-19 15:55:02,717|azureml.SendRunKillSignal|DEBUG|[START]
+2020-11-19 15:55:02,717|azureml.RunStatusContext|DEBUG|[START]
+2020-11-19 15:55:02,717|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunContextManager.RunStatusContext|DEBUG|[START]
+2020-11-19 15:55:02,717|azureml.WorkingDirectoryCM|DEBUG|[START]
+2020-11-19 15:55:02,717|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|[START]
+2020-11-19 15:55:02,717|azureml.history._tracking.PythonWorkingDirectory|INFO|Current working dir: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126892/azureml/hd_af0a1956-3032-44c7-98cf-78ad7bc59689_0/mounts/workspaceblobstore/azureml/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0
+2020-11-19 15:55:02,717|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Calling pyfs
+2020-11-19 15:55:02,717|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Storing working dir for pyfs as /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126892/azureml/hd_af0a1956-3032-44c7-98cf-78ad7bc59689_0/mounts/workspaceblobstore/azureml/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0
+2020-11-19 15:55:21,000|azureml.core.authentication|DEBUG|Expecting value: line 1 column 1 (char 0)
+2020-11-19 15:55:21,001|azureml.core.authentication|DEBUG|'AZUREML_SERVICE_PRINCIPAL_TENANT_ID'
+2020-11-19 15:55:21,001|azureml.core.authentication|DEBUG|name 'dbutils' is not defined
+2020-11-19 15:55:21,014|azureml._vendor.azure_cli_core._session|INFO|Failed to load or parse file /root/.azureml/auth/azureProfile.json. It will be overridden by default settings.
+2020-11-19 15:55:21,015|azureml._vendor.azure_cli_core._session|INFO|Failed to load or parse file /root/.azureml/auth/az.json. It will be overridden by default settings.
+2020-11-19 15:55:21,015|azureml._vendor.azure_cli_core._session|INFO|Failed to load or parse file /root/.azureml/auth/az.sess. It will be overridden by default settings.
+2020-11-19 15:55:21,015|azureml._vendor.azure_cli_core._session|INFO|Failed to load or parse file /root/.azure/azureProfile.json. It will be overridden by default settings.
+2020-11-19 15:55:21,017|azureml._vendor.azure_cli_core._profile|INFO|Detect no GUI is available, so fall back to device code
+2020-11-19 15:55:32,402|azureml.core.authentication|DEBUG|Time to expire 1814087.597251 seconds
+2020-11-19 15:56:02,403|azureml.core.authentication|DEBUG|Time to expire 1814057.596886 seconds
+2020-11-19 15:56:32,403|azureml.core.authentication|DEBUG|Time to expire 1814027.596439 seconds
+2020-11-19 15:57:02,404|azureml.core.authentication|DEBUG|Time to expire 1813997.596007 seconds
+2020-11-19 15:57:32,404|azureml.core.authentication|DEBUG|Time to expire 1813967.595689 seconds
+2020-11-19 15:58:02,404|azureml.core.authentication|DEBUG|Time to expire 1813937.595339 seconds
+2020-11-19 15:58:32,405|azureml.core.authentication|DEBUG|Time to expire 1813907.59503 seconds
+2020-11-19 15:59:02,405|azureml.core.authentication|DEBUG|Time to expire 1813877.594699 seconds
+2020-11-19 15:59:32,405|azureml.core.authentication|DEBUG|Time to expire 1813847.594333 seconds
+2020-11-19 16:00:02,406|azureml.core.authentication|DEBUG|Time to expire 1813817.59392 seconds
+2020-11-19 16:00:32,406|azureml.core.authentication|DEBUG|Time to expire 1813787.593418 seconds
+2020-11-19 16:01:02,407|azureml.core.authentication|DEBUG|Time to expire 1813757.593 seconds
+2020-11-19 16:01:32,407|azureml.core.authentication|DEBUG|Time to expire 1813727.592492 seconds
+2020-11-19 16:02:02,407|azureml.core.authentication|DEBUG|Time to expire 1813697.592086 seconds
+2020-11-19 16:02:32,408|azureml.core.authentication|DEBUG|Time to expire 1813667.591819 seconds
+2020-11-19 16:03:02,408|azureml.core.authentication|DEBUG|Time to expire 1813637.59141 seconds
+2020-11-19 16:03:32,409|azureml.core.authentication|DEBUG|Time to expire 1813607.591027 seconds
+2020-11-19 16:04:02,409|azureml.core.authentication|DEBUG|Time to expire 1813577.590708 seconds
+2020-11-19 16:04:32,409|azureml.core.authentication|DEBUG|Time to expire 1813547.59036 seconds
+2020-11-19 16:05:02,410|azureml.core.authentication|DEBUG|Time to expire 1813517.590014 seconds
+2020-11-19 16:05:32,410|azureml.core.authentication|DEBUG|Time to expire 1813487.589497 seconds
+2020-11-19 16:06:02,410|azureml.core.authentication|DEBUG|Time to expire 1813457.589123 seconds
+2020-11-19 16:06:32,411|azureml.core.authentication|DEBUG|Time to expire 1813427.588725 seconds
+2020-11-19 16:07:02,411|azureml.core.authentication|DEBUG|Time to expire 1813397.588384 seconds
+2020-11-19 16:07:32,412|azureml.core.authentication|DEBUG|Time to expire 1813367.588005 seconds
+2020-11-19 16:08:02,412|azureml.core.authentication|DEBUG|Time to expire 1813337.5875 seconds
+2020-11-19 16:08:32,412|azureml.core.authentication|DEBUG|Time to expire 1813307.587095 seconds
+2020-11-19 16:09:02,413|azureml.core.authentication|DEBUG|Time to expire 1813277.586724 seconds
+2020-11-19 16:09:32,413|azureml.core.authentication|DEBUG|Time to expire 1813247.586355 seconds
+2020-11-19 16:10:02,414|azureml.core.authentication|DEBUG|Time to expire 1813217.585976 seconds
+2020-11-19 16:10:24,588|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Calling pyfs
+2020-11-19 16:10:24,588|azureml.history._tracking.PythonWorkingDirectory|INFO|Current working dir: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126892/azureml/hd_af0a1956-3032-44c7-98cf-78ad7bc59689_0/mounts/workspaceblobstore/azureml/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0
+2020-11-19 16:10:24,588|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Reverting working dir from /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126892/azureml/hd_af0a1956-3032-44c7-98cf-78ad7bc59689_0/mounts/workspaceblobstore/azureml/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0 to /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126892/azureml/hd_af0a1956-3032-44c7-98cf-78ad7bc59689_0/mounts/workspaceblobstore/azureml/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0
+2020-11-19 16:10:24,588|azureml.history._tracking.PythonWorkingDirectory|INFO|Working dir is already updated /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-126892/azureml/hd_af0a1956-3032-44c7-98cf-78ad7bc59689_0/mounts/workspaceblobstore/azureml/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0
+2020-11-19 16:10:24,588|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|[STOP]
+2020-11-19 16:10:24,589|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0|INFO|fail is not setting status for submitted runs.
+2020-11-19 16:10:24,589|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[START]
+2020-11-19 16:10:24,589|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient|DEBUG|Overrides: Max batch size: 50, batch cushion: 5, Interval: 1.
+2020-11-19 16:10:24,589|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch.PostMetricsBatchDaemon|DEBUG|Starting daemon and triggering first instance
+2020-11-19 16:10:24,589|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient|DEBUG|Used <class 'azureml._common.async_utils.batch_task_queue.BatchTaskQueue'> for use_batch=True.
+2020-11-19 16:10:24,590|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[START]
+2020-11-19 16:10:24,590|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|flush timeout 300 is different from task queue timeout 120, using flush timeout
+2020-11-19 16:10:24,590|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|Waiting 300 seconds on tasks: [].
+2020-11-19 16:10:24,590|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch|DEBUG|
+2020-11-19 16:10:24,590|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2020-11-19 16:10:24,590|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient|DEBUG|Overrides: Max batch size: 50, batch cushion: 5, Interval: 1.
+2020-11-19 16:10:24,590|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.PostMetricsBatchV2Daemon|DEBUG|Starting daemon and triggering first instance
+2020-11-19 16:10:24,591|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient|DEBUG|Used <class 'azureml._common.async_utils.batch_task_queue.BatchTaskQueue'> for use_batch=True.
+2020-11-19 16:10:24,591|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[START]
+2020-11-19 16:10:24,591|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|flush timeout 300 is different from task queue timeout 120, using flush timeout
+2020-11-19 16:10:24,591|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|Waiting 300 seconds on tasks: [].
+2020-11-19 16:10:24,591|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2|DEBUG|
+2020-11-19 16:10:24,591|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2020-11-19 16:10:24,591|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[STOP]
+2020-11-19 16:10:24,591|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.RunClient.wait_on_ingest-async:False|DEBUG|[START]
+2020-11-19 16:10:24,593|msrest.service_client|DEBUG|Accept header absent and forced to application/json
+2020-11-19 16:10:24,593|msrest.http_logger|DEBUG|Request URL: 'https://southcentralus.experiments.azureml.net/history/v1.0/subscriptions/bc4ac49b-f3f0-45bb-995b-638f2c80696f/resourceGroups/aml-quickstarts-126892/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-126892/experiments/hyper_drive/runs/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0/metricsingest/wait'
+2020-11-19 16:10:24,593|msrest.http_logger|DEBUG|Request method: 'GET'
+2020-11-19 16:10:24,593|msrest.http_logger|DEBUG|Request headers:
+2020-11-19 16:10:24,593|msrest.http_logger|DEBUG|    'Accept': 'application/json'
+2020-11-19 16:10:24,593|msrest.http_logger|DEBUG|    'Content-Type': 'application/json; charset=utf-8'
+2020-11-19 16:10:24,593|msrest.http_logger|DEBUG|    'x-ms-client-request-id': '6e0b4eed-9eeb-4f4b-8fba-fbd4f84277fd'
+2020-11-19 16:10:24,593|msrest.http_logger|DEBUG|    'request-id': '6e0b4eed-9eeb-4f4b-8fba-fbd4f84277fd'
+2020-11-19 16:10:24,593|msrest.http_logger|DEBUG|    'User-Agent': 'python/3.6.2 (Linux-4.15.0-1098-azure-x86_64-with-debian-stretch-sid) msrest/0.6.14 azureml._restclient/core.1.6.0 azureml-sdk-core/1.6.0'
+2020-11-19 16:10:24,593|msrest.http_logger|DEBUG|Request body:
+2020-11-19 16:10:24,594|msrest.http_logger|DEBUG|None
+2020-11-19 16:10:24,594|msrest.universal_http|DEBUG|Configuring redirects: allow=True, max=30
+2020-11-19 16:10:24,594|msrest.universal_http|DEBUG|Configuring request: timeout=100, verify=True, cert=None
+2020-11-19 16:10:24,594|msrest.universal_http|DEBUG|Configuring proxies: ''
+2020-11-19 16:10:24,594|msrest.universal_http|DEBUG|Evaluate proxies against ENV settings: True
+2020-11-19 16:10:24,662|msrest.http_logger|DEBUG|Response status: 200
+2020-11-19 16:10:24,662|msrest.http_logger|DEBUG|Response headers:
+2020-11-19 16:10:24,662|msrest.http_logger|DEBUG|    'Date': 'Thu, 19 Nov 2020 16:10:24 GMT'
+2020-11-19 16:10:24,662|msrest.http_logger|DEBUG|    'Content-Type': 'application/json; charset=utf-8'
+2020-11-19 16:10:24,662|msrest.http_logger|DEBUG|    'Content-Length': '2'
+2020-11-19 16:10:24,662|msrest.http_logger|DEBUG|    'Connection': 'keep-alive'
+2020-11-19 16:10:24,662|msrest.http_logger|DEBUG|    'Request-Context': 'appId=cid-v1:2d2e8e63-272e-4b3c-8598-4ee570a0e70d'
+2020-11-19 16:10:24,663|msrest.http_logger|DEBUG|    'x-ms-response-type': 'standard'
+2020-11-19 16:10:24,663|msrest.http_logger|DEBUG|    'x-ms-client-request-id': '6e0b4eed-9eeb-4f4b-8fba-fbd4f84277fd'
+2020-11-19 16:10:24,663|msrest.http_logger|DEBUG|    'x-ms-client-session-id': ''
+2020-11-19 16:10:24,663|msrest.http_logger|DEBUG|    'X-Content-Type-Options': 'nosniff'
+2020-11-19 16:10:24,663|msrest.http_logger|DEBUG|    'x-request-time': '0.048'
+2020-11-19 16:10:24,663|msrest.http_logger|DEBUG|    'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'
+2020-11-19 16:10:24,663|msrest.http_logger|DEBUG|Response content:
+2020-11-19 16:10:24,663|msrest.http_logger|DEBUG|{}
+2020-11-19 16:10:24,666|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.RunClient.wait_on_ingest-async:False|DEBUG|[STOP]
+2020-11-19 16:10:24,667|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.RunClient.post-async:False|DEBUG|[START]
+2020-11-19 16:10:24,668|msrest.service_client|DEBUG|Accept header absent and forced to application/json
+2020-11-19 16:10:24,668|msrest.http_logger|DEBUG|Request URL: 'https://southcentralus.experiments.azureml.net/history/v1.0/subscriptions/bc4ac49b-f3f0-45bb-995b-638f2c80696f/resourceGroups/aml-quickstarts-126892/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-126892/experiments/hyper_drive/runs/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0/events'
+2020-11-19 16:10:24,668|msrest.http_logger|DEBUG|Request method: 'POST'
+2020-11-19 16:10:24,668|msrest.http_logger|DEBUG|Request headers:
+2020-11-19 16:10:24,668|msrest.http_logger|DEBUG|    'Accept': 'application/json'
+2020-11-19 16:10:24,668|msrest.http_logger|DEBUG|    'Content-Type': 'application/json-patch+json; charset=utf-8'
+2020-11-19 16:10:24,668|msrest.http_logger|DEBUG|    'x-ms-caller-name': 'RunHistoryFacade'
+2020-11-19 16:10:24,668|msrest.http_logger|DEBUG|    'x-ms-client-request-id': 'a874bd40-8877-41c4-8fb5-58c1c94323fe'
+2020-11-19 16:10:24,669|msrest.http_logger|DEBUG|    'request-id': 'a874bd40-8877-41c4-8fb5-58c1c94323fe'
+2020-11-19 16:10:24,669|msrest.http_logger|DEBUG|    'Content-Length': '2119'
+2020-11-19 16:10:24,669|msrest.http_logger|DEBUG|    'User-Agent': 'python/3.6.2 (Linux-4.15.0-1098-azure-x86_64-with-debian-stretch-sid) msrest/0.6.14 azureml._restclient/core.1.6.0 azureml-sdk-core/1.6.0'
+2020-11-19 16:10:24,669|msrest.http_logger|DEBUG|Request body:
+2020-11-19 16:10:24,669|msrest.http_logger|DEBUG|{"timestamp": "2020-11-19T16:10:24.667499Z", "name": "Microsoft.MachineLearning.Run.Error", "data": {"RunId": "HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0", "ErrorResponse": {"error": {"code": "UserError", "message": "User program failed with TypeError: Object of type 'AdalError' is not JSON serializable", "detailsUri": "https://aka.ms/azureml-known-errors", "debugInfo": {"type": "TypeError", "message": "Object of type 'AdalError' is not JSON serializable", "stackTrace": "  File \"/opt/miniconda/lib/python3.6/contextlib.py\", line 365, in __exit__\n    if cb(*exc_details):\n  File \"/opt/miniconda/lib/python3.6/contextlib.py\", line 284, in _exit_wrapper\n    return cm_exit(cm, *exc_details)\n  File \"/opt/miniconda/lib/python3.6/site-packages/azureml/_history/utils/log_scope.py\", line 30, in __exit__\n    self._logger.error(\"{0}: {1}\\n{2}\".format(etype, value, traceback))\n  File \"/opt/miniconda/lib/python3.6/site-packages/azureml/_common/exceptions.py\", line 116, in __str__\n    return self.__repr__()\n  File \"/opt/miniconda/lib/python3.6/site-packages/azureml/_common/exceptions.py\", line 112, in __repr__\n    self._serialize_json(indent=4))\n  File \"/opt/miniconda/lib/python3.6/site-packages/azureml/_common/exceptions.py\", line 183, in _serialize_json\n    return json.dumps(error_ret, indent=indent)\n  File \"/opt/miniconda/lib/python3.6/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"/opt/miniconda/lib/python3.6/json/encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"/opt/miniconda/lib/python3.6/json/encoder.py\", line 430, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"/opt/miniconda/lib/python3.6/json/encoder.py\", line 404, in _iterencode_dict\n    yield from chunks\n  File \"/opt/miniconda/lib/python3.6/json/encoder.py\", line 404, in _iterencode_dict\n    yield from chunks\n  File \"/opt/miniconda/lib/python3.6/json/encoder.py\", line 437, in _iterencode\n    o = _default(o)\n  File \"/opt/miniconda/lib/python3.6/json/encoder.py\", line 180, in default\n    o.__class__.__name__)\n"}}}}}
+2020-11-19 16:10:24,669|msrest.universal_http|DEBUG|Configuring redirects: allow=True, max=30
+2020-11-19 16:10:24,669|msrest.universal_http|DEBUG|Configuring request: timeout=100, verify=True, cert=None
+2020-11-19 16:10:24,669|msrest.universal_http|DEBUG|Configuring proxies: ''
+2020-11-19 16:10:24,669|msrest.universal_http|DEBUG|Evaluate proxies against ENV settings: True
+2020-11-19 16:10:24,741|msrest.http_logger|DEBUG|Response status: 200
+2020-11-19 16:10:24,742|msrest.http_logger|DEBUG|Response headers:
+2020-11-19 16:10:24,742|msrest.http_logger|DEBUG|    'Date': 'Thu, 19 Nov 2020 16:10:24 GMT'
+2020-11-19 16:10:24,742|msrest.http_logger|DEBUG|    'Content-Length': '0'
+2020-11-19 16:10:24,742|msrest.http_logger|DEBUG|    'Connection': 'keep-alive'
+2020-11-19 16:10:24,742|msrest.http_logger|DEBUG|    'Request-Context': 'appId=cid-v1:2d2e8e63-272e-4b3c-8598-4ee570a0e70d'
+2020-11-19 16:10:24,743|msrest.http_logger|DEBUG|    'x-ms-response-type': 'standard'
+2020-11-19 16:10:24,743|msrest.http_logger|DEBUG|    'x-ms-client-request-id': 'a874bd40-8877-41c4-8fb5-58c1c94323fe'
+2 User program failed with TypeError: Object of type 'AdalError' is not JSON serializable020-11-19 16:10:24,743|msrest.http_logger|DEBUG|    'x-ms-client-session-id': ''
+2020-11-19 16:10:24,743|msrest.http_logger|DEBUG|    'X-Content-Type-Options': 'nosniff'
+2020-11-19 16:10:24,743|msrest.http_logger|DEBUG|    'x-request-time': '0.052'
+2020-11-19 16:10:24,744|msrest.http_logger|DEBUG|    'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'
+2020-11-19 16:10:24,744|msrest.http_logger|DEBUG|Response content:
+2020-11-19 16:10:24,744|msrest.http_logger|DEBUG|
+2020-11-19 16:10:24,746|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.RunClient.post-async:False|DEBUG|[STOP]
+2020-11-19 16:10:24,747|azureml.RunStatusContext|ERROR|<class 'TypeError'>: Object of type 'AdalError' is not JSON serializable
+<traceback object at 0x7f369f846f08>
+2020-11-19 16:10:24,747|azureml.RunStatusContext|DEBUG|[STOP]
+2020-11-19 16:10:24,747|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[START]
+2020-11-19 16:10:24,747|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[START]
+2020-11-19 16:10:24,747|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|flush timeout 900.0 is different from task queue timeout 120, using flush timeout
+2020-11-19 16:10:24,747|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|Waiting 900.0 seconds on tasks: [].
+2020-11-19 16:10:24,747|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch|DEBUG|
+2020-11-19 16:10:24,748|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2020-11-19 16:10:24,748|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[START]
+2020-11-19 16:10:24,748|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|flush timeout 900.0 is different from task queue timeout 120, using flush timeout
+2020-11-19 16:10:24,748|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|Waiting 900.0 seconds on tasks: [].
+2020-11-19 16:10:24,748|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2|DEBUG|
+2020-11-19 16:10:24,748|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2020-11-19 16:10:24,748|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[STOP]
+2020-11-19 16:10:24,748|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.RunClient.wait_on_ingest-async:False|DEBUG|[START]
+2020-11-19 16:10:24,748|msrest.service_client|DEBUG|Accept header absent and forced to application/json
+2020-11-19 16:10:24,748|msrest.http_logger|DEBUG|Request URL: 'https://southcentralus.experiments.azureml.net/history/v1.0/subscriptions/bc4ac49b-f3f0-45bb-995b-638f2c80696f/resourceGroups/aml-quickstarts-126892/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-126892/experiments/hyper_drive/runs/HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0/metricsingest/wait'
+2020-11-19 16:10:24,749|msrest.http_logger|DEBUG|Request method: 'GET'
+2020-11-19 16:10:24,749|msrest.http_logger|DEBUG|Request headers:
+2020-11-19 16:10:24,749|msrest.http_logger|DEBUG|    'Accept': 'application/json'
+2020-11-19 16:10:24,749|msrest.http_logger|DEBUG|    'Content-Type': 'application/json; charset=utf-8'
+2020-11-19 16:10:24,749|msrest.http_logger|DEBUG|    'x-ms-client-request-id': 'd81da509-2efa-46e3-8901-a0ace2585a45'
+2020-11-19 16:10:24,749|msrest.http_logger|DEBUG|    'request-id': 'd81da509-2efa-46e3-8901-a0ace2585a45'
+2020-11-19 16:10:24,749|msrest.http_logger|DEBUG|    'User-Agent': 'python/3.6.2 (Linux-4.15.0-1098-azure-x86_64-with-debian-stretch-sid) msrest/0.6.14 azureml._restclient/core.1.6.0 azureml-sdk-core/1.6.0'
+2020-11-19 16:10:24,749|msrest.http_logger|DEBUG|Request body:
+2020-11-19 16:10:24,749|msrest.http_logger|DEBUG|None
+2020-11-19 16:10:24,749|msrest.universal_http|DEBUG|Configuring redirects: allow=True, max=30
+2020-11-19 16:10:24,749|msrest.universal_http|DEBUG|Configuring request: timeout=100, verify=True, cert=None
+2020-11-19 16:10:24,749|msrest.universal_http|DEBUG|Configuring proxies: ''
+2020-11-19 16:10:24,749|msrest.universal_http|DEBUG|Evaluate proxies against ENV settings: True
+2020-11-19 16:10:24,810|msrest.http_logger|DEBUG|Response status: 200
+2020-11-19 16:10:24,810|msrest.http_logger|DEBUG|Response headers:
+2020-11-19 16:10:24,810|msrest.http_logger|DEBUG|    'Date': 'Thu, 19 Nov 2020 16:10:24 GMT'
+2020-11-19 16:10:24,810|msrest.http_logger|DEBUG|    'Content-Type': 'application/json; charset=utf-8'
+2020-11-19 16:10:24,811|msrest.http_logger|DEBUG|    'Content-Length': '2'
+2020-11-19 16:10:24,811|msrest.http_logger|DEBUG|    'Connection': 'keep-alive'
+2020-11-19 16:10:24,811|msrest.http_logger|DEBUG|    'Request-Context': 'appId=cid-v1:2d2e8e63-272e-4b3c-8598-4ee570a0e70d'
+2020-11-19 16:10:24,811|msrest.http_logger|DEBUG|    'x-ms-response-type': 'standard'
+2020-11-19 16:10:24,811|msrest.http_logger|DEBUG|    'x-ms-client-request-id': 'd81da509-2efa-46e3-8901-a0ace2585a45'
+2020-11-19 16:10:24,811|msrest.http_logger|DEBUG|    'x-ms-client-session-id': ''
+2020-11-19 16:10:24,811|msrest.http_logger|DEBUG|    'X-Content-Type-Options': 'nosniff'
+2020-11-19 16:10:24,811|msrest.http_logger|DEBUG|    'x-request-time': '0.036'
+2020-11-19 16:10:24,811|msrest.http_logger|DEBUG|    'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'
+2020-11-19 16:10:24,812|msrest.http_logger|DEBUG|Response content:
+2020-11-19 16:10:24,812|msrest.http_logger|DEBUG|{}
+2020-11-19 16:10:24,814|azureml._SubmittedRun#HD_af0a1956-3032-44c7-98cf-78ad7bc59689_0.RunHistoryFacade.RunClient.wait_on_ingest-async:False|DEBUG|[STOP]
+2020-11-19 16:10:24,815|azureml.SendRunKillSignal|ERROR|<class 'TypeError'>: Object of type 'AdalError' is not JSON serializable
+<traceback object at 0x7f369f846f08>
+2020-11-19 16:10:24,815|azureml.SendRunKillSignal|DEBUG|[STOP]
+2020-11-19 16:10:24,815|azureml.HistoryTrackingWorkerPool.WorkerPoolShutdown|DEBUG|[START]
+2020-11-19 16:10:24,815|azureml.HistoryTrackingWorkerPool.WorkerPoolShutdown|DEBUG|[STOP]
+2020-11-19 16:10:24,815|azureml.WorkerPool|ERROR|<class 'TypeError'>: Object of type 'AdalError' is not JSON serializable
+<traceback object at 0x7f369f846f08>
+2020-11-19 16:10:24,815|azureml.WorkerPool|DEBUG|[STOP]
+
+Error occurred:

@@ -1,0 +1,704 @@
+2020/11/26 13:42:25 Attempt 1 of http call to http://10.0.0.5:16384/sendlogstoartifacts/info
+2020/11/26 13:42:25 Attempt 1 of http call to http://10.0.0.5:16384/sendlogstoartifacts/status
+[2020-11-26T13:42:26.969306] Entering context manager injector.
+[context_manager_injector.py] Command line Options: Namespace(inject=['ProjectPythonPath:context_managers.ProjectPythonPath', 'RunHistory:context_managers.RunHistory', 'TrackUserError:context_managers.TrackUserError'], invocation=['featurize_AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8.py'])
+Script type = None
+Starting the daemon thread to refresh tokens in background for process with pid = 106
+Entering Run History Context Manager.
+Current directory:  /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-127982/azureml/automl_f82e1bd9-e861-4081-9333-e62b2429c4e8_featurize_tr/mounts/workspaceblobstore/azureml/AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8_featurize_tr
+Preparing to call script [ featurize_AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8.py ] with arguments: []
+After variable expansion, calling script [ featurize_AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8.py ] with arguments: []
+
+Starting the featurization....
+Set enable_streaming flag to False
+2020-11-26 13:42:33.532 - INFO - Changing AutoML temporary path to current working directory.
+WARNING - Received unrecognized parameter environment_label
+2020-11-26 13:42:33.699 - INFO - Successfully got the cache data store, caching enabled.
+2020-11-26 13:42:33.699 - INFO - Took 0.15866327285766602 seconds to retrieve cache data store
+2020-11-26 13:42:33.862 - INFO - ActivityStarted: load
+2020-11-26 13:42:33.871 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=8.84[ms]
+2020-11-26 13:42:34.495 - INFO - Setup artifacts successfully retrieved.
+2020-11-26 13:42:34.495 - INFO - Preparing input data for featurization iteration for run AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8_featurize_tr.
+2020-11-26 13:42:34.495 - INFO - Resolving dataflows using dprep json.
+2020-11-26 13:42:34.496 - INFO - DataPrep version: 2.4.0
+2020-11-26 13:42:34.496 - INFO - DataPrep log client session id: fdd1ebb4-f501-4e09-bd12-ae390670fc91
+2020-11-26 13:42:34.496 - INFO - ActivityStarted: ParsingDataprepJSON
+2020-11-26 13:42:34.497 - INFO - Deserializing dataflow.
+2020-11-26 13:42:39.949 - INFO - ActivityCompleted: Activity=ParsingDataprepJSON, HowEnded=Success, Duration=5452.33[ms]
+2020-11-26 13:42:39.949 - INFO - ActivityStarted: BuildingDataCharacteristics
+2020-11-26 13:42:39.949 - INFO - Starting data characteristics calculation. This might take a while...
+2020-11-26 13:42:44.781 - INFO - ActivityCompleted: Activity=BuildingDataCharacteristics, HowEnded=Success, Duration=4831.55[ms]
+2020-11-26 13:42:44.781 - INFO - Successfully retrieved data using dataprep.
+2020-11-26 13:42:44.781 - INFO - Streaming is not conducive due to incompatible settings. Reason[s]: ['n_cross_validations' was non-empty]
+2020-11-26 13:42:44.781 - INFO - Preparing to fetch all feature profiles for the run.
+2020-11-26 13:42:44.782 - INFO - Preparing feature sweeping feature profile request.
+2020-11-26 13:42:44.974 - INFO - Service responded with streaming disabled
+2020-11-26 13:42:45.718 - INFO - User has validation defined, no train rule based validation needed.
+2020-11-26 13:42:45.719 - INFO - Pre-processing user data
+2020-11-26 13:42:45.719 - INFO - The size of the raw data is: 9815
+2020-11-26 13:42:45.724 - INFO - [YCol]RawFeatureStats:{"num_unique_vals": "2", "total_number_vals": "116", "total_number_vals_including_nans": "116", "num_na": "0", "column_type": "\"integer\"", "lengths": "{}", "num_unique_lens": "0", "average_entry_length": "0", "average_number_spaces": "0", "cardinality_ratio": "0", "is_datetime": "false", "is_all_nan": "false", "unicode_median_value": "0"}
+2020-11-26 13:42:45.724 - INFO - Inspecting target column for missing values.
+2020-11-26 13:42:45.726 - INFO - X datatype is <class 'numpy.ndarray'>, shape is (116, 9), datasize is 8352.
+2020-11-26 13:42:45.731 - INFO - y datatype is <class 'numpy.ndarray'>, shape is (116,), datasize is 928.
+2020-11-26 13:42:45.737 - INFO - Feature sweeping enabled: True
+2020-11-26 13:42:45.737 - INFO - Feature sweeping timeout: 86400
+2020-11-26 13:42:45.823 - INFO - ActivityStarted: FeatureConfigDownload
+2020-11-26 13:42:45.825 - INFO - ActivityCompleted: Activity=FeatureConfigDownload, HowEnded=Success, Duration=1.78[ms]
+2020-11-26 13:42:45.825 - INFO - ActivityStarted: EngineeredFeatureNamesDownload
+2020-11-26 13:42:45.826 - INFO - ActivityCompleted: Activity=EngineeredFeatureNamesDownload, HowEnded=Success, Duration=0.66[ms]
+2020-11-26 13:42:45.827 - INFO - ActivityStarted: load
+2020-11-26 13:42:45.837 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=10.81[ms]
+2020-11-26 13:42:45.838 - INFO - Getting [] from Azure file store cache
+2020-11-26 13:42:45.843 - INFO - ActivityStarted: get
+2020-11-26 13:42:45.843 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.22[ms]
+2020-11-26 13:42:45.843 - INFO - Set problem info. AutoML featurization for run AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8_featurize_tr.
+2020-11-26 13:42:45.843 - INFO - ActivityStarted: Getting transformed data context.
+2020-11-26 13:42:45.843 - INFO - Using AzureFileCacheStore for caching transformed data.
+2020-11-26 13:42:45.844 - INFO - ActivityStarted: Beginning full featurization logic.
+2020-11-26 13:42:45.844 - INFO - Start checking class balancing on y data.
+2020-11-26 13:42:45.976 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:45.976 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:45.977 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:45.979 - INFO - SimpleImputer: Finished applying transform. Shape (116, 1)
+2020-11-26 13:42:45.981 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:45.981 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:45.983 - INFO - SimpleImputer: Finished applying transform. Shape (116, 1)
+2020-11-26 13:42:45.985 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:45.985 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:45.987 - INFO - SimpleImputer: Finished applying transform. Shape (116, 1)
+2020-11-26 13:42:45.989 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:45.989 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:45.991 - INFO - SimpleImputer: Finished applying transform. Shape (116, 1)
+2020-11-26 13:42:45.993 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:45.993 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:45.995 - INFO - SimpleImputer: Finished applying transform. Shape (116, 1)
+2020-11-26 13:42:45.996 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:45.996 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:45.998 - INFO - SimpleImputer: Finished applying transform. Shape (116, 1)
+2020-11-26 13:42:46.000 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:46.000 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.001 - INFO - SimpleImputer: Finished applying transform. Shape (116, 1)
+2020-11-26 13:42:46.012 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:46.014 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.016 - INFO - SimpleImputer: Finished applying transform. Shape (116, 1)
+2020-11-26 13:42:46.016 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:46.016 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.018 - INFO - SimpleImputer: Finished applying transform. Shape (116, 1)
+2020-11-26 13:42:46.018 - INFO - Transform memory estimate: 0 bytes, Current available memory: 562081792 bytes
+2020-11-26 13:42:46.018 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:46.020 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (116, 8)
+2020-11-26 13:42:46.021 - INFO - Finished applying transforms
+2020-11-26 13:42:46.022 - INFO - Total ram: 7308169216 bytes, Current Available memory: 561954816 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:46.022 - INFO - Creating cross validations
+2020-11-26 13:42:46.023 - INFO - Found cross validation type: KFoldCrossValidationSplit
+2020-11-26 13:42:46.023 - INFO - Creating featurized version of CV splits data
+2020-11-26 13:42:46.091 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:46.092 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561954816 bytes
+2020-11-26 13:42:46.092 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.094 - INFO - SimpleImputer: Finished applying transform. Shape (92, 1)
+2020-11-26 13:42:46.095 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561954816 bytes
+2020-11-26 13:42:46.095 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.097 - INFO - SimpleImputer: Finished applying transform. Shape (92, 1)
+2020-11-26 13:42:46.106 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561954816 bytes
+2020-11-26 13:42:46.106 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.108 - INFO - SimpleImputer: Finished applying transform. Shape (92, 1)
+2020-11-26 13:42:46.109 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.109 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.111 - INFO - SimpleImputer: Finished applying transform. Shape (92, 1)
+2020-11-26 13:42:46.112 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.112 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.115 - INFO - SimpleImputer: Finished applying transform. Shape (92, 1)
+2020-11-26 13:42:46.118 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.118 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.120 - INFO - SimpleImputer: Finished applying transform. Shape (92, 1)
+2020-11-26 13:42:46.120 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.120 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.122 - INFO - SimpleImputer: Finished applying transform. Shape (92, 1)
+2020-11-26 13:42:46.123 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.123 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.125 - INFO - SimpleImputer: Finished applying transform. Shape (92, 1)
+2020-11-26 13:42:46.127 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.127 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.129 - INFO - SimpleImputer: Finished applying transform. Shape (92, 1)
+2020-11-26 13:42:46.130 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.130 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:46.133 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (92, 8)
+2020-11-26 13:42:46.133 - INFO - Finished applying transforms
+2020-11-26 13:42:46.135 - INFO - Total ram: 7308169216 bytes, Current Available memory: 561827840 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:46.136 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:46.137 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.137 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.139 - INFO - SimpleImputer: Finished applying transform. Shape (24, 1)
+2020-11-26 13:42:46.139 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.140 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.142 - INFO - SimpleImputer: Finished applying transform. Shape (24, 1)
+2020-11-26 13:42:46.142 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.143 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.145 - INFO - SimpleImputer: Finished applying transform. Shape (24, 1)
+2020-11-26 13:42:46.146 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.146 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.148 - INFO - SimpleImputer: Finished applying transform. Shape (24, 1)
+2020-11-26 13:42:46.149 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.149 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.151 - INFO - SimpleImputer: Finished applying transform. Shape (24, 1)
+2020-11-26 13:42:46.152 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.152 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.154 - INFO - SimpleImputer: Finished applying transform. Shape (24, 1)
+2020-11-26 13:42:46.155 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.155 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.160 - INFO - SimpleImputer: Finished applying transform. Shape (24, 1)
+2020-11-26 13:42:46.161 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561827840 bytes
+2020-11-26 13:42:46.161 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.163 - INFO - SimpleImputer: Finished applying transform. Shape (24, 1)
+2020-11-26 13:42:46.166 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561684480 bytes
+2020-11-26 13:42:46.166 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.169 - INFO - SimpleImputer: Finished applying transform. Shape (24, 1)
+2020-11-26 13:42:46.171 - INFO - Transform memory estimate: 0 bytes, Current available memory: 561684480 bytes
+2020-11-26 13:42:46.172 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:46.176 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (24, 8)
+2020-11-26 13:42:46.176 - INFO - Finished applying transforms
+2020-11-26 13:42:46.177 - INFO - Total ram: 7308169216 bytes, Current Available memory: 561684480 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:46.177 - INFO - _X_train_transformed: (92, 17)
+y_train: (92,)
+X_test_transformed: (24, 17)
+y_test: (24,)
+size of split is: 17216
+
+2020-11-26 13:42:46.177 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:46.189 - INFO - ActivityStarted: add
+2020-11-26 13:42:46.189 - INFO - Uploading key: featurized_cv_split_0
+2020-11-26 13:42:46.190 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:46.283 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:46.369 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=85.19[ms]
+2020-11-26 13:42:46.374 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:46.381 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=191.22[ms]
+2020-11-26 13:42:46.381 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=191.63[ms]
+2020-11-26 13:42:46.381 - INFO - Adding pickle key: featurized_cv_split_0
+2020-11-26 13:42:46.429 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:46.430 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.430 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.432 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.433 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.433 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.435 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.436 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.436 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.438 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.439 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.439 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.443 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.444 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.444 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.446 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.447 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.447 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.449 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.457 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.457 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.459 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.459 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.459 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.461 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.462 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.462 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.464 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.465 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.465 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:46.468 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (93, 8)
+2020-11-26 13:42:46.468 - INFO - Finished applying transforms
+2020-11-26 13:42:46.470 - INFO - Total ram: 7308169216 bytes, Current Available memory: 538042368 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:46.471 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:46.471 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.471 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.473 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.474 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.474 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.476 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.477 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.477 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.479 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.481 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.481 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.483 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.484 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.484 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.487 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.488 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.489 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.490 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.491 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.492 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.494 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.495 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.495 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.497 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.498 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.498 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.500 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.501 - INFO - Transform memory estimate: 0 bytes, Current available memory: 538042368 bytes
+2020-11-26 13:42:46.502 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:46.504 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (23, 8)
+2020-11-26 13:42:46.505 - INFO - Finished applying transforms
+2020-11-26 13:42:46.507 - INFO - Total ram: 7308169216 bytes, Current Available memory: 538042368 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:46.508 - INFO - _X_train_transformed: (93, 17)
+y_train: (93,)
+X_test_transformed: (23, 17)
+y_test: (23,)
+size of split is: 17216
+
+2020-11-26 13:42:46.508 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:46.508 - INFO - ActivityStarted: add
+2020-11-26 13:42:46.508 - INFO - Uploading key: featurized_cv_split_1
+2020-11-26 13:42:46.509 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:46.564 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:46.686 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=121.53[ms]
+2020-11-26 13:42:46.693 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:46.706 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=197.35[ms]
+2020-11-26 13:42:46.706 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=198.03[ms]
+2020-11-26 13:42:46.707 - INFO - Adding pickle key: featurized_cv_split_1
+2020-11-26 13:42:46.761 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:46.762 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.762 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.764 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.765 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.765 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.767 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.770 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.770 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.772 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.773 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.773 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.775 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.776 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.776 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.778 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.787 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.787 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.789 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.790 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.791 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.793 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.793 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.794 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.796 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.796 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.797 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.798 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:46.800 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537915392 bytes
+2020-11-26 13:42:46.800 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:46.803 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (93, 8)
+2020-11-26 13:42:46.803 - INFO - Finished applying transforms
+2020-11-26 13:42:46.805 - INFO - Total ram: 7308169216 bytes, Current Available memory: 537915392 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:46.806 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:46.807 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.807 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.809 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.811 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.811 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.813 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.815 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.815 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.817 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.818 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.818 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.820 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.821 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.822 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.824 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.825 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.825 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.827 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.829 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.829 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.831 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.832 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.833 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.835 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.836 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.836 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:46.838 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:46.839 - INFO - Transform memory estimate: 0 bytes, Current available memory: 537788416 bytes
+2020-11-26 13:42:46.839 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:46.842 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (23, 8)
+2020-11-26 13:42:46.842 - INFO - Finished applying transforms
+2020-11-26 13:42:46.844 - INFO - Total ram: 7308169216 bytes, Current Available memory: 537788416 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:46.844 - INFO - _X_train_transformed: (93, 17)
+y_train: (93,)
+X_test_transformed: (23, 17)
+y_test: (23,)
+size of split is: 17216
+
+2020-11-26 13:42:46.844 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:46.845 - INFO - ActivityStarted: add
+2020-11-26 13:42:46.845 - INFO - Uploading key: featurized_cv_split_2
+2020-11-26 13:42:46.845 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:46.895 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:46.996 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=101.48[ms]
+2020-11-26 13:42:47.006 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:47.014 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=168.92[ms]
+2020-11-26 13:42:47.015 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=169.84[ms]
+2020-11-26 13:42:47.015 - INFO - Adding pickle key: featurized_cv_split_2
+2020-11-26 13:42:47.094 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:47.095 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.095 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.097 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.098 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.099 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.100 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.101 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.101 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.104 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.105 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.106 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.108 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.109 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.109 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.111 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.111 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.111 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.113 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.113 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.114 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.115 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.116 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.117 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.118 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.119 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.120 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.121 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.130 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.130 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:47.134 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (93, 8)
+2020-11-26 13:42:47.134 - INFO - Finished applying transforms
+2020-11-26 13:42:47.135 - INFO - Total ram: 7308169216 bytes, Current Available memory: 536485888 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:47.136 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:47.136 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.137 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.138 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.139 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.139 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.141 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.142 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.142 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.144 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.146 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.146 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.148 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.149 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.150 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.152 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.153 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.153 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.155 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.156 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.156 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.158 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.160 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.160 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.162 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.163 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.163 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.165 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.166 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.166 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:47.168 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (23, 8)
+2020-11-26 13:42:47.168 - INFO - Finished applying transforms
+2020-11-26 13:42:47.170 - INFO - Total ram: 7308169216 bytes, Current Available memory: 536485888 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:47.170 - INFO - _X_train_transformed: (93, 17)
+y_train: (93,)
+X_test_transformed: (23, 17)
+y_test: (23,)
+size of split is: 17216
+
+2020-11-26 13:42:47.170 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:47.171 - INFO - ActivityStarted: add
+2020-11-26 13:42:47.171 - INFO - Uploading key: featurized_cv_split_3
+2020-11-26 13:42:47.171 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:47.212 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:47.313 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=100.55[ms]
+2020-11-26 13:42:47.319 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:47.325 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=154.0[ms]
+2020-11-26 13:42:47.325 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=154.65[ms]
+2020-11-26 13:42:47.326 - INFO - Adding pickle key: featurized_cv_split_3
+2020-11-26 13:42:47.383 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:47.383 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.383 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.385 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.386 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.386 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.388 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.389 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.390 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.391 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.392 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.393 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.395 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.396 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.396 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.398 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.400 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.400 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.402 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.403 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.403 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.405 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.406 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.406 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.408 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.409 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.409 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.411 - INFO - SimpleImputer: Finished applying transform. Shape (93, 1)
+2020-11-26 13:42:47.412 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.412 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:47.415 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (93, 8)
+2020-11-26 13:42:47.415 - INFO - Finished applying transforms
+2020-11-26 13:42:47.416 - INFO - Total ram: 7308169216 bytes, Current Available memory: 536485888 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:47.418 - INFO - Starting to apply transforms. Total ram: 7308169216 bytes
+2020-11-26 13:42:47.419 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.419 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.421 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.422 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.422 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.424 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.427 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536485888 bytes
+2020-11-26 13:42:47.427 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.429 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.437 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536358912 bytes
+2020-11-26 13:42:47.437 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.439 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.440 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536424448 bytes
+2020-11-26 13:42:47.440 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.442 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.443 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536424448 bytes
+2020-11-26 13:42:47.444 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.446 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.446 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536424448 bytes
+2020-11-26 13:42:47.446 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.448 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.448 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536424448 bytes
+2020-11-26 13:42:47.448 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.450 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.451 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536424448 bytes
+2020-11-26 13:42:47.451 - INFO - SimpleImputer: Applying transform.
+2020-11-26 13:42:47.453 - INFO - SimpleImputer: Finished applying transform. Shape (23, 1)
+2020-11-26 13:42:47.454 - INFO - Transform memory estimate: 0 bytes, Current available memory: 536424448 bytes
+2020-11-26 13:42:47.454 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Applying transform.
+2020-11-26 13:42:47.457 - INFO - SimpleImputer,MaxAbsScaler,MiniBatchKMeans: Finished applying transform. Shape (23, 8)
+2020-11-26 13:42:47.457 - INFO - Finished applying transforms
+2020-11-26 13:42:47.459 - INFO - Total ram: 7308169216 bytes, Current Available memory: 536424448 bytes. Low memory threshold: 0.5
+2020-11-26 13:42:47.459 - INFO - _X_train_transformed: (93, 17)
+y_train: (93,)
+X_test_transformed: (23, 17)
+y_test: (23,)
+size of split is: 17216
+
+2020-11-26 13:42:47.459 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:47.460 - INFO - ActivityStarted: add
+2020-11-26 13:42:47.460 - INFO - Uploading key: featurized_cv_split_4
+2020-11-26 13:42:47.460 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:47.521 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:47.622 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=100.86[ms]
+2020-11-26 13:42:47.630 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:47.635 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=174.95[ms]
+2020-11-26 13:42:47.636 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=175.7[ms]
+2020-11-26 13:42:47.636 - INFO - Adding pickle key: featurized_cv_split_4
+2020-11-26 13:42:47.636 - INFO - Completed creating cross-validation folds and featurizing them
+2020-11-26 13:42:47.698 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:47.698 - INFO - ActivityStarted: add
+2020-11-26 13:42:47.698 - INFO - Uploading key: X
+2020-11-26 13:42:47.699 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:47.751 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:47.921 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=170.13[ms]
+2020-11-26 13:42:47.929 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>}
+2020-11-26 13:42:47.936 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=236.92[ms]
+2020-11-26 13:42:47.936 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=237.67[ms]
+2020-11-26 13:42:47.936 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:47.936 - INFO - ActivityStarted: add
+2020-11-26 13:42:47.936 - INFO - Uploading key: y
+2020-11-26 13:42:47.937 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:48.088 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:48.198 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=109.87[ms]
+2020-11-26 13:42:48.205 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>}
+2020-11-26 13:42:48.213 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=276.36[ms]
+2020-11-26 13:42:48.213 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=276.69[ms]
+2020-11-26 13:42:48.213 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:48.213 - INFO - ActivityStarted: add
+2020-11-26 13:42:48.213 - INFO - Uploading key: X_valid
+2020-11-26 13:42:48.214 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:48.312 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:48.404 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=91.89[ms]
+2020-11-26 13:42:48.410 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:48.415 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=201.89[ms]
+2020-11-26 13:42:48.416 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=202.18[ms]
+2020-11-26 13:42:48.416 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:48.416 - INFO - ActivityStarted: add
+2020-11-26 13:42:48.416 - INFO - Uploading key: y_valid
+2020-11-26 13:42:48.416 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:48.521 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:48.608 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=87.49[ms]
+2020-11-26 13:42:48.629 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:48.636 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=219.25[ms]
+2020-11-26 13:42:48.636 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=219.59[ms]
+2020-11-26 13:42:48.636 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:48.637 - INFO - ActivityStarted: add
+2020-11-26 13:42:48.637 - INFO - Uploading key: sample_weight
+2020-11-26 13:42:48.637 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:48.726 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:48.812 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=85.45[ms]
+2020-11-26 13:42:48.817 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:48.823 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=185.56[ms]
+2020-11-26 13:42:48.823 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=186.38[ms]
+2020-11-26 13:42:48.823 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:48.824 - INFO - ActivityStarted: add
+2020-11-26 13:42:48.824 - INFO - Uploading key: sample_weight_valid
+2020-11-26 13:42:48.824 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:48.926 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:49.051 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=124.44[ms]
+2020-11-26 13:42:49.059 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:49.066 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=242.45[ms]
+2020-11-26 13:42:49.066 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=242.81[ms]
+2020-11-26 13:42:49.067 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:49.067 - INFO - ActivityStarted: add
+2020-11-26 13:42:49.067 - INFO - Uploading key: x_raw_column_names
+2020-11-26 13:42:49.067 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:49.168 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:49.260 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=91.09[ms]
+2020-11-26 13:42:49.267 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:49.274 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=206.42[ms]
+2020-11-26 13:42:49.274 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=206.96[ms]
+2020-11-26 13:42:49.275 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:49.275 - INFO - ActivityStarted: add
+2020-11-26 13:42:49.276 - INFO - Uploading key: cv_splits_indices
+2020-11-26 13:42:49.276 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:49.413 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:49.514 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=100.81[ms]
+2020-11-26 13:42:49.520 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:49.526 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=249.58[ms]
+2020-11-26 13:42:49.526 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=250.56[ms]
+2020-11-26 13:42:49.526 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:49.527 - INFO - ActivityStarted: add
+2020-11-26 13:42:49.527 - INFO - Uploading key: transformers
+2020-11-26 13:42:49.527 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:49.586 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:49.676 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=90.77[ms]
+2020-11-26 13:42:49.695 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:49.701 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=174.11[ms]
+2020-11-26 13:42:49.707 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=180.08[ms]
+2020-11-26 13:42:49.707 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:49.707 - INFO - ActivityStarted: add
+2020-11-26 13:42:49.707 - INFO - Uploading key: cv_splits
+2020-11-26 13:42:49.708 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:49.788 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:49.929 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=141.31[ms]
+2020-11-26 13:42:49.936 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:49.942 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=234.66[ms]
+2020-11-26 13:42:49.942 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=235.06[ms]
+2020-11-26 13:42:49.943 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:49.943 - INFO - ActivityStarted: add
+2020-11-26 13:42:49.943 - INFO - Uploading key: _on_demand_pickle_keys
+2020-11-26 13:42:49.943 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:50.047 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:50.144 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=97.32[ms]
+2020-11-26 13:42:50.151 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:50.157 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=213.43[ms]
+2020-11-26 13:42:50.157 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=213.78[ms]
+2020-11-26 13:42:50.157 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:50.158 - INFO - ActivityStarted: add
+2020-11-26 13:42:50.158 - INFO - Uploading key: timeseries
+2020-11-26 13:42:50.158 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:50.246 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:50.338 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=92.43[ms]
+2020-11-26 13:42:50.346 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:50.352 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=193.66[ms]
+2020-11-26 13:42:50.352 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=194.06[ms]
+2020-11-26 13:42:50.352 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:50.352 - INFO - ActivityStarted: add
+2020-11-26 13:42:50.353 - INFO - Uploading key: timeseries_param_dict
+2020-11-26 13:42:50.353 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:50.440 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:50.536 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=96.35[ms]
+2020-11-26 13:42:50.542 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:50.548 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=194.91[ms]
+2020-11-26 13:42:50.548 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=195.69[ms]
+2020-11-26 13:42:50.548 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:50.549 - INFO - ActivityStarted: add
+2020-11-26 13:42:50.549 - INFO - Uploading key: data_snapshot_str
+2020-11-26 13:42:50.550 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:50.642 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:50.734 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=92.05[ms]
+2020-11-26 13:42:50.742 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:50.749 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=198.61[ms]
+2020-11-26 13:42:50.749 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=200.04[ms]
+2020-11-26 13:42:50.749 - INFO - The size of transformed data is: 18942
+2020-11-26 13:42:50.750 - INFO - ActivityCompleted: Activity=Beginning full featurization logic., HowEnded=Success, Duration=4905.38[ms]
+2020-11-26 13:42:50.750 - INFO - ActivityCompleted: Activity=Getting transformed data context., HowEnded=Success, Duration=4906.44[ms]
+2020-11-26 13:42:50.750 - INFO - Setting problem info.
+2020-11-26 13:42:50.750 - INFO - Logging dataset information for AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8_featurize_tr
+2020-11-26 13:42:50.750 - INFO - [ParentRunId:AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8_featurize_tr]X datatype is <class 'numpy.ndarray'>, shape is (116, 17), datasize is 15888.
+2020-11-26 13:42:50.750 - INFO - [ParentRunId:AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8_featurize_tr]y datatype is <class 'numpy.ndarray'>, shape is (116,), datasize is 928.
+2020-11-26 13:42:50.750 - INFO - Checking single occurrence class condition for entire training data
+2020-11-26 13:42:50.751 - INFO - Checking single occurrence class condition for cross validation 0 training data
+2020-11-26 13:42:50.751 - INFO - Checking single occurrence class condition for cross validation 1 training data
+2020-11-26 13:42:50.751 - INFO - Checking single occurrence class condition for cross validation 2 training data
+2020-11-26 13:42:50.752 - INFO - Checking single occurrence class condition for cross validation 3 training data
+2020-11-26 13:42:50.752 - INFO - Checking single occurrence class condition for cross validation 4 training data
+2020-11-26 13:42:50.851 - INFO - Created ClientDataset.
+2020-11-26 13:42:50.851 - INFO - Parsing cross validation dataset.
+2020-11-26 13:42:50.851 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:50.852 - INFO - ActivityStarted: add
+2020-11-26 13:42:50.852 - INFO - Uploading key: class_labels
+2020-11-26 13:42:50.852 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:51.014 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:51.101 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=86.24[ms]
+2020-11-26 13:42:51.106 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>}
+2020-11-26 13:42:51.112 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=260.27[ms]
+2020-11-26 13:42:51.113 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=260.65[ms]
+2020-11-26 13:42:51.113 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:51.113 - INFO - ActivityStarted: add
+2020-11-26 13:42:51.114 - INFO - Uploading key: train CV splits
+2020-11-26 13:42:51.114 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:51.215 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:51.355 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=140.18[ms]
+2020-11-26 13:42:51.363 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:51.369 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=255.44[ms]
+2020-11-26 13:42:51.370 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=256.32[ms]
+2020-11-26 13:42:51.370 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:51.370 - INFO - ActivityStarted: add
+2020-11-26 13:42:51.370 - INFO - Uploading key: featurized train CV splits
+2020-11-26 13:42:51.370 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:51.423 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:51.520 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=97.63[ms]
+2020-11-26 13:42:51.527 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:51.533 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=162.7[ms]
+2020-11-26 13:42:51.533 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=163.07[ms]
+2020-11-26 13:42:51.534 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:51.534 - INFO - ActivityStarted: add
+2020-11-26 13:42:51.534 - INFO - Uploading key: dataset_cached_keys
+2020-11-26 13:42:51.535 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:51.626 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:51.765 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=139.32[ms]
+2020-11-26 13:42:51.771 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:51.778 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=242.84[ms]
+2020-11-26 13:42:51.778 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=243.64[ms]
+2020-11-26 13:42:51.874 - INFO - Adding data to Azure file store cache
+2020-11-26 13:42:51.877 - INFO - ActivityStarted: add
+2020-11-26 13:42:51.883 - INFO - Uploading key: dataset_cached_object
+2020-11-26 13:42:51.884 - INFO - ActivityStarted: _serialize_and_upload
+2020-11-26 13:42:51.940 - INFO - ActivityStarted: _persist_saved_as_file
+2020-11-26 13:42:52.024 - INFO - ActivityCompleted: Activity=_persist_saved_as_file, HowEnded=Success, Duration=83.74[ms]
+2020-11-26 13:42:52.030 - INFO - Persisted saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-26 13:42:52.036 - INFO - ActivityCompleted: Activity=_serialize_and_upload, HowEnded=Success, Duration=152.73[ms]
+Featurization collector run finished
+2020-11-26 13:42:52.037 - INFO - ActivityCompleted: Activity=add, HowEnded=Success, Duration=159.25[ms]
+2020-11-26 13:42:52.037 - INFO - Successfully cached dataset.
+2020-11-26 13:42:52.037 - INFO - Preparation for run id AutoML_f82e1bd9-e861-4081-9333-e62b2429c4e8 finished successfully.
+Starting the daemon thread to refresh tokens in background for process with pid = 106
+
+
+[2020-11-26T13:42:52.176071] The experiment completed successfully. Finalizing run...
+Cleaning up all outstanding Run operations, waiting 900.0 seconds
+5 items cleaning up...
+Cleanup took 0.6140248775482178 seconds
+[2020-11-26T13:42:53.176088] Finished context manager injector.
+2020/11/26 13:43:00 Attempt 1 of http call to http://10.0.0.5:16384/sendlogstoartifacts/status
+2020/11/26 13:43:00 Process Exiting with Code:  0

@@ -72,15 +72,30 @@ The configuration used for automl for this experiment is as follows:
 
 5.8 concurrent iteration is used.
 
+![configuration](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/automl_settings.PNG)
+
 
 ### Results
 
 The Best model is Voting Ensemble with an AUC  of 87.38
 
-The parameters of the automl are detailed in the previous section and also shown below.
+The parameters of the automl are detailed in the previous section and the screenshot of the rn details are shown below
 
 The model can be imporved by increasing the number of iterations and setting the featurization to be auto.Using neural network based classification to improve the performance of the model
 
+![Run_details](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/automl_run_widget.PNG)
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/automl_run_widget1.PNG)
+
+Best model run id:
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/automl_best_model_runid.PNG)
+
+The best model run screenshot :
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/automl_best_model_run_estimator1.PNG)
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/automl_best_model_run_estimator2.PNG)
 ## Hyperparameter Tuning
 
 1.Since the task was a classification problem , the model used SVM classification since it performed well compared to logistic regression due to the fact that it can handle nonlinear relationships better.

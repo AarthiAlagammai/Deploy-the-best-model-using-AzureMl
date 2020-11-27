@@ -157,9 +157,7 @@ ML studio visualizations:
 
 ![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/endpoint2.PNG)
 
-## Screen Recording
 
-https://drive.google.com/file/d/1KwtACwHSfLnrPqMfC4kpd0OkETkRsptr/view?usp=sharing
 
 ## Standout Suggestions
 

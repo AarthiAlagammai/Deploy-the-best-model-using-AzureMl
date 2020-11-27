@@ -113,6 +113,18 @@ The best model run screenshot :
 ### Results
 
 The SVM model achieved an accuracy of 62.5 and the best parameters for -C is 1 and for -coef0 is 0
+
+Hyperdrive Rn details:
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/hyperdrive1.PNG)
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/hyperdrive2.PNG)
+
+Hyperdrive best run 
+ 
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/hyperdive_best_run1.PNG)
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/hyperdrive_run_details2.PNG)
+ 
 ## Model Deployment
 
 1.Register the dataset using SDK 
@@ -121,7 +133,7 @@ The SVM model achieved an accuracy of 62.5 and the best parameters for -C is 1 a
 
 3.Create a custom environment or use the environmnet of automl's best_run
 
-4.Create a score.py file used for deployment and evaluation (llllllllllll)
+4.Create a score.py file used for deployment and evaluation. The  score.py for the project is [here](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/score.ipynb)
 
 5.Deploy the webervice locally and make sure there are no errors
 
@@ -130,13 +142,25 @@ The SVM model achieved an accuracy of 62.5 and the best parameters for -C is 1 a
 7.Send the test_data to the deployed webserivce using json command which will be processed by the score.py file
 
 8.Receive the response form the webservice using the endpoint
-*
+
+Screenshot is showing the successful deployment of the webservice :
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/deployment.PNG)
+
+Response from the webservice
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/response.PNG)
+
+ML studio visualizations:
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/endpoint1.PNG)
+
+![](https://github.com/AarthiAlagammai/Deploy-the-best-model-using-AzureMl/blob/master/Screenshots_from_workspace/endpoint2.PNG)
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+
+https://drive.google.com/file/d/1KwtACwHSfLnrPqMfC4kpd0OkETkRsptr/view?usp=sharing
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+Enabled application insights for the deployed model
